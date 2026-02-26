@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Tweeter</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <header class="top_nav">
+     <div class="nav_content">
+       <div class="logo_circle"></div>
+       <span class="brand_text">Tweeter</span>
+     </div>
+     </header>
+
+     <main class="main">
+    
+    <section class="tweet_composer">
+        <div class="Profile_photo_holder"></div>
+
+        <div class="text">
+            <textarea
+                id="TweetInput"
+                maxlength="160"
+                placeholder="What's happening?"
+            ></textarea>
+
+        <div class="footer">
+            <span id="CharCount">160 Characters Remaining</span>
+            <button id="tweetButton" class="tweet_button" disabled>tweeet</button>
+        </div>
+     </div>
+</section>
+
+    <section class="TweeterFeed">
+        <article class="tweet">
+           <div class="Profile picture"></div>
+           
+           <div class="tweet_text">
+            <div class="tweet_header">
+                <span class="Name">Alejandro</span>
+                <span class="Username">@alejandro464</span>
+                <span class="dot">.</span>
+                <span class="Time"> Feb 24 4:00pm</span>
+            </div>
+           
+            <p class="tweet-text"> Hey, CSCI 3342 is cool!</p>
+           
+            <div class="tweetActions">
+                <span class="comment">💬</span>
+                <span class="link">🔗</span>
+                <span class="upload">🔼</span>
+                <span class="retweet">🔁</span>
+            </div>
+        </div>
+     </article>
+    </section>
+     </main>
+     <script src="script.js"></script>
+</body>
+</html>
